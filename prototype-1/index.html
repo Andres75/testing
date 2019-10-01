@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Open Sans';
+	}
+	body {
+		overflow-x: hidden;
+		background-color: #f0f0f0;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	#phone-container {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		max-width: 375px;
+		background: white;
+		height: auto;
+		min-height: 600px;
+		text-align: center;
+	}
+
+	#header {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	#header img {
+		display: inline-block;
+		width: 100%;
+	}
+
+	#primary-menu {
+		position: relative;
+		width: auto;
+		min-height: 64px;
+		height: 64px;
+	}
+
+	#primary-menu .content {
+		width: 100%;
+		height: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+		flex-grow:1;
+		justify-content: space-between;
+		padding:0 8px 0 8px;
+
+	}
+
+	#primary-menu .content .border-line {
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #c1c1c1;
+		left:0px;
+	}
+
+	#primary-menu .content .button {
+		width:auto;
+		height: 100%;
+		min-height: 40px;
+		background: white;
+		flex-basis: 19%;
+	}
+
+	#primary-menu .content .button .tab {
+		position: relative;
+		z-index: 20;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+		width: 100%;
+		height: 100%;
+		border: 2px solid transparent;
+		border-radius: 8px 8px 0 0;
+	}
+
+	#primary-menu .content .button .tab.active {
+		color:#8948a2;
+		font-weight: bold;
+		border: 2px solid #c1c1c1;
+		border-bottom-color: white;
+	}
+
+	#primary-menu .content .button {
+
+	}
+
+	#primary-menu .content .button:hover { cursor: pointer }
+
+	#primary-menu .content .button p {
+		font-size: 12px;
+		text-transform: capitalize;
+		margin-top: 2px;
+	}
+
+	#primary-menu .content .button .icon {
+		stroke: white;
+		fill: none;
+	}
+
+	#mid-scroll {
+		position: relative;
+		width: auto;
+		max-height: 40px;
+		background-color: white;
+		overflow-x: auto;
+	}
+
+	#mid-scroll .content {
+		display: flex;
+		width: auto;
+		text-align: left;
+		align-items: center;
+		flex-grow:1;
+		justify-content: space-between;
+		height: 100%;
+
+	}
+
+	#mid-scroll .content .button-menu {
+		width: auto;
+		min-width: 100%;
+		margin-right: 20px;
+		font-size: 13px;
+		height: 100%;
+	}
+
+	#mid-scroll .content .button-menu ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		flex-grow:1;
+		justify-content: space-around;
+		list-style-type: none;
+	}
+
+
+	#mid-scroll .content .button-menu ul li {
+		white-space: nowrap;
+		margin-right: 30px;
+
+	}
+
+	#mid-scroll .content .button-menu ul li a {
+		text-decoration: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid white;
+	}
+
+	#mid-scroll .content .button-menu ul li a.active {
+		border-bottom-color:#8948a2;
+		color:#8948a2 !important;
+		font-weight: bold;
+	}
+
+
+	#mid-scroll .content .button-menu ul li a:link { color: #3e3e3e; }
+	#mid-scroll .content .button-menu ul li a:visited { color: #3e3e3e; }
+	#mid-scroll .content .button-menu ul li a:active { color: #3e3e3e; }
+
+	#mid-scroll .content .button-menu ul li:last-child {
+		margin-right: 0;
+	}
+
+	#lowerpage .content {
+		position: relative;
+		width: auto;
+		background-color: #f0f0f0;
+		padding: 10px;
+		text-align: left;
+		min-height: 1000px;
+	}
+
+	#lowerpage .content img {
+		width: 100%;
+	}
+
+	#lowerpage .content p { padding-left:10px; }
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Testing prototype</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+	<link href="icons.js" rel="stylesheet">
+</head>
+<body>
+	<div id="phone-container">
+		<div id="header">
+			<div class="content"><img src="header.png" alt=""></div>
+		</div>
+		<div id="primary-menu">
+			<div class="content">
+
+			</div>
+		</div>
+		<div id="mid-scroll">
+			<div class="content">
+				<div class="button-menu"></div>
+			</div>
+		</div>
+		<div id="lowerpage">
+			<div class="content">123</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous">
+	</script>
+
+  <script>
+  	jQuery(document).ready(function($) {
+
+  		links = ['news', 'profile', 'progress','insights', 'calendar'];
+  		$this = null;
+
+  		$('#primary-menu .content').append('<div class="border-line"></div>');
+  		
+  		for (var i = 0; i < links.length; i++) {
+
+  			image = '<img src="icons/' + links[i] + '_unselected.svg" alt="' + links[i] + '" icon="' + links[i] + '">';
+  			// svg   = eval('icon_' + links[i]);
+
+  			$('#primary-menu .content').append('<div class="button" action="' + links[i] + '"><div class="tab">' + image + '<p>' + links[i] + '</p></div></div>');
+  		}
+
+  		$('#primary-menu > .content > .button').click(function(event) {
+
+  			var $this = $(this);
+
+			for (var i = 0; i < links.length; i++) {
+				$('[icon="'+links[i]+'"]').attr('src','icons/'+links[i]+'_unselected.svg').parent().removeClass('active');
+			}
+
+  			$('#mid-scroll .content .button-menu').empty();
+  			$('#mid-scroll .content .button-menu').load('menu-' + $(this).attr('action')+'.html', function(e){
+
+				$clicked_img = $this.find('img');
+	  			$clicked_icon =$clicked_img.attr('icon');
+	  			$clicked_img.attr('src','icons/'+$clicked_icon+'_selected.svg');
+
+	  			$firstLink = $(this).find('a').first();
+	  			$firstLink.addClass('active');
+
+	  			if ($firstLink.attr('action') != undefined)
+	  				linkAction = 'page-' + $firstLink.attr('action')+'.html';
+	  			else 
+	  				linkAction = 'page-news.html';
+
+				$('#lowerpage .content').load(linkAction);
+
+
+  			// .attr('src',)
+
+  			});
+  			$('.tab').removeClass('active');
+  			$(this).find('.tab').addClass('active');
+  		});
+
+  		$('#lowerpage .content').load('page-news.html', function(e){
+  			$('[icon="news"]').attr('src','icons/news_selected.svg').parent().addClass('active');
+  		});
+  	});
+  </script>
+</body>
+</html>

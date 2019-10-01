@@ -1,0 +1,16 @@
+<ul>
+	<li><a href="#" action="calendarme">ME</a></li>
+	<li><a href="#" action="calendarteam">TEAM</a></li>
+</ul>
+
+<script>
+  	jQuery(document).ready(function($) {
+  		$('#mid-scroll .button-menu a').click(function(event) {
+  			event.preventDefault();
+  			$('#mid-scroll .button-menu a').removeClass('active');
+  			$(this).addClass('active');
+  			$('#lowerpage .content').html('');
+  			$('#lowerpage .content').load('page-' + $(this).attr('action'));
+  		});
+  	});
+</script>

@@ -1,0 +1,18 @@
+<ul style="justify-content: flex-start; padding-top:7px; padding-bottom:7px">
+	<li style="padding:0 0px 0 20px"><a href="#" action="social">SOCIAL</a></li>
+	<li style="padding:0 0px 0 20px"><a href="#" action="mydetails">MY DETAILS</a></li>
+	<li style="padding:0 20px 0 20px"><a href="#" action="myemployment">MY EMPLOYEMENT</a></li>
+</ul>
+
+<script>
+  	jQuery(document).ready(function($) {
+  		$('#mid-scroll .button-menu a').click(function(event) {
+  			$('#mid-scroll .button-menu a').removeClass('active');
+  			$(this).addClass('active');
+  			event.preventDefault();
+
+  			$('#lowerpage .content').html('');
+  			$('#lowerpage .content').load('page-' + $(this).attr('action'));
+  		});
+  	});
+</script>
