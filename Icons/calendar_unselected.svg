@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24.602" viewBox="0 0 26 24.602">
+  <g id="Calendar_selected" transform="translate(22327 23089.602)">
+    <g id="Group_67294" data-name="Group 67294" transform="translate(-22327.051 -23089)">
+      <g id="Rectangle_25521" data-name="Rectangle 25521" transform="translate(0.051 1)" fill="none" stroke="#868686" stroke-width="2">
+        <rect width="26" height="23" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="24" height="21" rx="3" fill="none"/>
+      </g>
+      <g id="Group_67288" data-name="Group 67288">
+        <rect id="Rectangle_25522" data-name="Rectangle 25522" width="5" height="4" transform="translate(3.5)" fill="#fff"/>
+        <rect id="Rectangle_25523" data-name="Rectangle 25523" width="5" height="4" transform="translate(17.051)" fill="#fff"/>
+      </g>
+      <line id="Line_2725" data-name="Line 2725" x2="1.682" transform="translate(5.26 9.286)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-2" data-name="Line 2725" x2="1.682" transform="translate(11.987 9.286)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-3" data-name="Line 2725" x2="1.682" transform="translate(18.713 9.286)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-4" data-name="Line 2725" x2="1.682" transform="translate(5.26 13.49)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-5" data-name="Line 2725" x2="1.682" transform="translate(11.987 13.49)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-6" data-name="Line 2725" x2="1.682" transform="translate(18.713 13.49)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-7" data-name="Line 2725" x2="1.682" transform="translate(5.26 17.694)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-8" data-name="Line 2725" x2="1.682" transform="translate(11.987 17.694)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2725-9" data-name="Line 2725" x2="1.682" transform="translate(18.713 17.694)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2726" data-name="Line 2726" y2="2.522" transform="translate(6.119 0.898)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_2727" data-name="Line 2727" y2="2.522" transform="translate(19.61 0.898)" fill="none" stroke="#868686" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

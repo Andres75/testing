@@ -1,0 +1,19 @@
+<ul>
+	<li style="margin-left:20px"><a href="#" action="checkins">CHECK-INS</a></li>
+	<li><a href="#" action="goals">GOALS</a></li>
+	<li><a href="#" action="strategy">STRATEGY</a></li>
+	<li><a href="#" action="skills">SKILLS</a></li>
+	<li><a href="#" action="learning">LEARNING</a></li>
+</ul>
+
+<script>
+  	jQuery(document).ready(function($) {
+  		$('#mid-scroll .button-menu a').click(function(event) {
+  			event.preventDefault();
+        $('#mid-scroll .button-menu a').removeClass('active');
+        $(this).addClass('active');
+  			$('#lowerpage .content').html('');
+  			$('#lowerpage .content').load('page-' + $(this).attr('action')+'.html');
+  		});
+  	});
+</script>
